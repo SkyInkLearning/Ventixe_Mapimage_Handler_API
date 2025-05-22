@@ -27,6 +27,6 @@ public class MapUploadController : ControllerBase
 
             return Ok(imageUrl);
         }
-        catch (Exception ex) { return BadRequest(ex.Message);  }
+        catch (Exception ex) { return BadRequest(ex.Message); }
     }
 }

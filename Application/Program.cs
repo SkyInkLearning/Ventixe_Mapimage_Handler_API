@@ -14,8 +14,12 @@ builder.Services.AddScoped<IMapService>(_ => new MapService(connectionString!, c
 
 var app = builder.Build();
 
+
 app.MapOpenApi();
 app.UseHttpsRedirection();
+
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
