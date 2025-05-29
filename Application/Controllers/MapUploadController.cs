@@ -1,9 +1,11 @@
-﻿using Application.Service;
+﻿using Application.Extensions.Attributes;
+using Application.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers;
 
+[UseApiKey]
 [Route("api/[controller]")]
 [ApiController]
 public class MapUploadController : ControllerBase
