@@ -17,7 +17,7 @@ public class MapService(string connectionString, string container) : IMapService
         string contentType = !string.IsNullOrEmpty(mapFile.ContentType)
             ? mapFile.ContentType : "application/octet-stream";
 
-        if ((contentType == "application/octet-stream" || string.IsNullOrEmpty(contentType)) && fileExtension.Equals(".svg", StringComparison.OrdinalIgnoreCase)
+        if ((contentType == "application/octet-stream" || string.IsNullOrEmpty(contentType)) && fileExtension.Equals(".svg", StringComparison.OrdinalIgnoreCase))
             {
             contentType = "image/svg+xml";
             }
