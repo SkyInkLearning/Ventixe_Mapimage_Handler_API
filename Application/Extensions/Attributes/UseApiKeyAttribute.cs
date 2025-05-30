@@ -9,7 +9,7 @@ public class UseApiKeyAttribute : Attribute, IAsyncActionFilter
     public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
     {
         var configuration = context.HttpContext.RequestServices.GetRequiredService<IConfiguration>();
-        var apiKey = configuration["ApiKeys: StandardApiKey"];
+        var apiKey = configuration["ApiKeys:StandardApiKey"];
 
         if (!context.HttpContext.Request.Headers.TryGetValue("X-API-KEY", out var key))
         {
