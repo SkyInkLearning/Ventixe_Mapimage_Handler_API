@@ -1,7 +1,5 @@
 # MapImageHandler
 
-Made by https://github.com/SimonR-prog
-
 # Postman:
 
 ## Authentication:
@@ -39,4 +37,15 @@ Invalid requests will be met with:
 
 ```
 
+# Sequence diagram plantuml
+
+<img src="https://github.com/user-attachments/assets/84937f84-3cfa-40ca-acd6-83e8442aff60" width="400">
+
 # Usage in the frontend:
+
+Coming soon..
+
+### Created By:
+
+https://github.com/SimonR-prog
+
