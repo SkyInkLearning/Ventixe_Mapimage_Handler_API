@@ -2,6 +2,8 @@
 using Application.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace Application.Controllers;
 
@@ -18,6 +20,11 @@ public class MapUploadController : ControllerBase
     }
 
     [HttpPost("upload")]
+    [Consumes("multipart/form-data")]
+    [Produces("application/json")]
+    [SwaggerOperation(Summary = "Uploads a map image to the blob storage and returns a url.")]
+    [SwaggerResponse(200, "Returns the imageurl.")]
+    [SwaggerResponse(400, "The IFormFile was either containing invalid data or missing properties.")]
     public async Task<IActionResult> UploadMapImage(IFormFile formFile)
     {
         if (formFile == null || formFile.Length == 0) { return BadRequest("Image is invalid."); }
