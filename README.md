@@ -22,21 +22,6 @@ Invalid requests will be met with:
 
 ```
 
-
-## GET:
-
-
-```json
-
-```
-
-## DELETE
-
-
-```json
-
-```
-
 # Sequence diagram plantuml
 
 <img src="https://github.com/user-attachments/assets/84937f84-3cfa-40ca-acd6-83e8442aff60" width="400">
