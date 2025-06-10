@@ -1,4 +1,15 @@
-# MapImageHandler
+# Mapimage Handler API
+
+## Purpose and thinking:
+
+This is one part of the map image for the ventixe site. This API takes in an image and returns the url from the blob storage on azure.
+
+Check the other part for more information. ( https://github.com/SkyInkLearning/Ventixe_Map_API )
+
+
+## Sequence diagram plantuml
+
+<img src="https://github.com/user-attachments/assets/84937f84-3cfa-40ca-acd6-83e8442aff60" width="400">
 
 # Postman:
 
@@ -22,13 +33,6 @@ Invalid requests will be met with:
 
 ```
 
-# Sequence diagram plantuml
-
-<img src="https://github.com/user-attachments/assets/84937f84-3cfa-40ca-acd6-83e8442aff60" width="400">
-
-# Usage in the frontend:
-
-Coming soon..
 
 ### Created By:
 
